@@ -1,0 +1,14 @@
+div {
+  width: 250px;
+  position: relative;
+}
+
+div.zoomable img {
+  width: 100%;
+}
+
+div.focus-box {
+  position: absolute;
+  border: 1px solid white;
+  overflow: hidden;
+}
