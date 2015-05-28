@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./thumbnails.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./thumbnails.css" rel="stylesheet" type="text/css">
+
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <div class="thumbnails">
+      <div class="active"></div>
+
+
+      <div class="gutter-images">
+        <img src="http://placekitten.com/250/205">
+        <img src="http://placekitten.com/205/200">
+        <img src="http://placecorgi.com/200/200">
+        <img src="http://placekitten.com/210/200">
+      </div>
+    </div>
+
+
+    <script>
+      $(function() {
+        $('.thumbnails').thumbnails();
+      })
+    </script>
+  </body>
+</html>

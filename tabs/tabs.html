@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs='#content-tabs'>
+      <li>
+        <a href='#peke' class='active'>Peke</a>
+      </li>
+
+      <li>
+        <a href='#labrador'>Labrador</a>
+      </li>
+
+      <li>
+        <a href='#collie'>Collie</a>
+      </li>
+    </ul>
+
+    <div id='content-tabs' >
+      <div class="tab-pane active" id='peke'>
+        <p>
+          Some dogs stuff.
+        </p>
+      </div>
+
+      <div class="tab-pane" id='labrador'>
+        <p>
+          More dog stuff.
+        </p>
+      </div>
+
+      <div class="tab-pane" id='collie'>
+        <p>
+          Even more dog stuff.
+        </p>
+      </div>
+
+    </div>
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
