@@ -1,8 +1,62 @@
 .gutter-images img {
-  width: 20%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  float: left;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 
+div.gutter-images {
+  display: block;
+  float: left;
+}
+
+.gutter {
+  width: 90%;
 }
 
 div.thumbnails{
-  width: 400px;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+.active img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+div.active {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.group::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+
+}
+
+a.nav {
+  width: 5%;
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 50px;
+  margin: 12px;
+
 }
