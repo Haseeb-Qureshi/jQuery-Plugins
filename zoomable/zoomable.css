@@ -1,14 +1,24 @@
-div {
-  width: 250px;
+div.zoomable {
+  width: 350px;
   position: relative;
 }
 
 div.zoomable img {
   width: 100%;
+  z-index: -1;
 }
 
 div.focus-box {
-  position: absolute;
+  position: fixed;
   border: 1px solid white;
-  overflow: hidden;
+  z-index: 1000;
+}
+
+div.zoomed-image {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 5;
 }
